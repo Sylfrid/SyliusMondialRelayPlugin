@@ -1,5 +1,5 @@
 {
-    "name": "magentix/sylius-mondial-relay-plugin",
+    "name": "sylfrid/sylius-mondial-relay-plugin",
     "type": "sylius-plugin",
     "description": "Mondial Relay Shipping plugin for Sylius.",
     "license": "GPL-3.0-or-later",

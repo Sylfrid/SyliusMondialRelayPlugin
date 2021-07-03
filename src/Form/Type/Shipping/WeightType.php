@@ -38,7 +38,7 @@ final class WeightType extends AbstractType
                 }
                 $form->add('amount', null, [
                     'label' => 'mondial_relay.form.shipping_method.amount',
-                    'data' => $data['amount'],
+                    'data' => $data['amount'] ?? null,
                 ]);
             })
             ->addEventListener(FormEvents::SUBMIT, function (FormEvent $event) use ($options): void {

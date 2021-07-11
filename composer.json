@@ -3,12 +3,12 @@
     "type": "sylius-plugin",
     "description": "Mondial Relay Shipping plugin for Sylius.",
     "license": "GPL-3.0-or-later",
-    "version": "1.4.2",
+    "version": "1.4.3",
     "require": {
         "php": "^7.2",
         "sylius/sylius": "~1.3",
         "bitbag/shipping-export-plugin": "^1.2",
-        "sylfrid/sylius-pickup-plugin": "1.4.1"
+        "sylfrid/sylius-pickup-plugin": "1.4.2"
     },
     "require-dev": {
         "phpspec/phpspec": "^5.0",

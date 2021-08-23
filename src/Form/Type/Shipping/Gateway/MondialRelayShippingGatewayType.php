@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Magentix\SyliusMondialRelayPlugin\Form\Type\Shipping\Gateway;
 
-use Symfony\Component\Intl\Intl;
+use Symfony\Component\Intl\Countries;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
@@ -167,7 +167,7 @@ final class MondialRelayShippingGatewayType extends AbstractType
                         'callback' => [$this, 'labelCountryValidation']
                     ]),
                 ],
-                'choices' => array_flip(Intl::getRegionBundle()->getCountryNames()),
+                'choices' => array_flip($countries = Countries::getNames()),
             ])
             ->add('label_shipper_phone_number', TextType::class, [
                 'label' => 'mondial_relay.form.shipping_gateway.label_shipper_phone_number',

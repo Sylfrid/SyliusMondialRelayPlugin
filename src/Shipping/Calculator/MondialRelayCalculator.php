@@ -201,7 +201,7 @@ final class MondialRelayCalculator implements CalculatorInterface
             'id'         => join('-', $pickupId),
             'company'    => strtoupper($pickup->LgAdr1),
             'street_1'   => strtolower($pickup->LgAdr3),
-            'street_2'   => strtolower($pickup->LgAdr4),
+            'street_2'   => strtolower($pickup->LgAdr4 ?? ''),
             'city'       => strtoupper($pickup->Ville),
             'country'    => $pickup->Pays,
             'postcode'   => $pickup->CP,
